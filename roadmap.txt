@@ -1,0 +1,13 @@
+Today:
+	- Experimented. Mocked up a weird <hr> that's stretched out so it's actually a vertical line and got it to shift in color gradience (courtesy of animate.css website, give thanks to the guy)
+
+Tomorrow:
+	- Decide how you'll lay out the page. Set up basic framework as it'll look on desktop/mobile. Look into Flexbox for this? Don't forget you'll want to be able to split content in the actual right-side-resume-area into different divs, alignments, etc.
+
+Future:
+	- Animate picture on click to flip
+	- On scroll animate/highlight leftside table of contents (ToC) to show where user is
+	- On click ToC smooth scroll to position?
+
+Meta-thoughts:
+	- It seems to me that once the layout is figured out everything else should be easy.

@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  background-color: #FD8809;
+}
+
+body {
+  /*width: 100%;*/
+}
+
+.all {
+  display: flex;
+  height: 100%;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  overflow: auto;
+}
+
+.side {
+  background-color: gray;
+  margin: auto;
+  width: 20%;
+  height: 100%;
+}
+
+.container {
+  background-color: #FA4A15;
+  display: flex;
+  height: 300px;
+}
+
+.container2 {
+  background-color: #1374FF;
+  display: flex;
+  height: 300px;
+}
+
+.container3 {
+  background-color: #54FB9F;
+  display: flex;
+  height: 300px;
+}
+
+.container4 {
+  background-color: #E35A08;
+  display: flex;
+  height: 300px;
+}
+
+.item1 {
+  background-color: #FD093B;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  /*flex-grow: 1;*/
+}
+
+.item2 {
+  background-color: #FDFBF4;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  flex-grow: 2;
+}
+
+.item3 {
+  background-color: #6F6F6F;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  flex-grow: 1;
+}
+
+.item4 {
+  background-color: #333333;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.item5 {
+  background-color: #25C740;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+
+.one {
+  color: #FA4A15;
+}
+.two {
+  color: #1374FF;
+}
+
+hr {
+  border: none;
+  margin-left: 200px;
+  /*margin-top: -10px;*/
+  height: 1000px;
+  width: 3px;
+  background-color: #c0c8c9;
+  background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    background-image: -moz-linear-gradient(92deg,#f35626,#feab3a);
+  /* -webkit-text-fill-color: transparent; */
+  -webkit-animation: hue 10s infinite linear;
+  -moz-animation: hue 10s infinite linear;
+}
+
+
+/*-----------------------------------*\
+  $BASE
+\*-----------------------------------*/
+
+
+
+/*-----------------------------------*\
+  $HEADER
+\*-----------------------------------*/
+
+  .site__title {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+  }
+
+/*-----------------------------------*\
+  $ANIMATIONS
+\*-----------------------------------*/
+
+@-moz-keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
