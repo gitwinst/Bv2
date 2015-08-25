@@ -79,7 +79,7 @@ header {
 }
 
 .name {
-  font-family: 'Moon Flower', sans-serif;
+  font-family: 'moon_flowerregular', sans-serif;
   letter-spacing: 0.05em;
   font-size: 24px;
   text-align: center;
@@ -151,7 +151,7 @@ hr {
 h3 {
   font-size: 36px;
   text-align: center;
-  font-family: 'Moon Flower', sans-serif;
+  font-family: 'moon_flowerregular', sans-serif;
   padding-bottom: 20px;
   /*  -webkit-font-smoothing: antialiased;*/
 }
