@@ -42,7 +42,8 @@
 }
 
 .bam {
-  font-family: "Moon Flower Bold";
+  /*font-family: "Moon Flower Bold";*/
+  font-family :'moon_flowerregular';
 }
 
 body {
