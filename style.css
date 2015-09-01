@@ -55,10 +55,7 @@
 .bam {
   /*font-family: "Moon Flower Bold";*/
   font-family :'moon_flowerregular';
-<<<<<<< HEAD
-=======
   font-weight: 700;
->>>>>>> Update index, style, initial commit script
 }
 
 body {
@@ -97,7 +94,7 @@ header {
 }
 
 .profile-image {
-  background-image: url("http://stanlemmens.nl/wp/wp-content/uploads/2014/07/bill-gates-wealthiest-person.jpg");
+  background-image: url("img/b1.jpg");
   width: 175px;
   height: 175px;
   background-size: 100% 100%;
@@ -162,7 +159,7 @@ hr {
   flex-direction: column;
   margin: 60px 15px;
   text-align: center;
-  background-color: #fdfdfd;
+  background-color: #FDFDFD;
   padding: 30px 10px;
   /*  -webkit-box-shadow: 1px 2px 1px 0px rgba(0,0,0,0.75);*/
   /*  -moz-box-shadow: 1px 2px 1px 0px rgba(0,0,0,0.75);*/
@@ -318,6 +315,10 @@ figcaption {
   font-size: 12px;
 }
 
+figcaption {
+  display: none;
+}
+
 
 
 
@@ -338,60 +339,174 @@ figcaption {
   background-image: url("img/shanghai.jpg");
 }
 
-.SCU-logo-small {
+/*.SCU-logo-small {
   background-image: url("img/SCU-logo.png");
   width: 100px;
   height: 100px;
   background-size: 100% 100%;
   margin: auto;
   margin-top: 15px;
+}*/
+
+.SCU-logo {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 100px;
+  max-height: 100%;
+  margin: auto;
+  margin-top: 15px;
 }
 
-fieldset,
-input,
-textarea {
+fieldset {
+  /*text-align: left;*/
   border: none;
-  background-color: #FDFDFD;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
 }
 
-input:focus,
-textarea:focus {
+#name,
+#email,
+#message {
+  background-color: #FDFDFD;
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+}
+
+#name:valid,
+#email:valid {
+  border-bottom: 1px solid #3DC807;
+}
+
+#message:focus {
+  background-color: #FDFDFD;
+  border: 1px solid #1374FF; 
+}
+
+#name,
+#email {
+  border: none;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+#message {
+  background-color: #EEEEEE;
+  border-color: #EEEEEE;;
+  border-radius: 2px;
+  height: 200px;
+}
+
+#name:focus,
+#email:focus,
+#message:focus {
+  outline: none;
+  box-shadow-bottom: 0 0 5px #1374FF;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border-bottom: 1px solid #1374FF;
 }
 
 #submit {
-  background-color: #3DC807;
-  /*color: white;*/
+  border: none;
+  background-color: rgba(253, 253, 253, 0);
+  color: #1B942F;
   font-size: 24px;
-  border: 1px solid #1B942F;
-  margin-top: 20px;
-  padding: 10px 20px;
-  border-radius: 2px;
-  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.4);
+  /*border-bottom: 0;*/
+  border: 2px solid #1B942F;
+  padding: 15px 30px;
+  border-radius: 4px;
+  /*margin-top: 20px;*/
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 }
 
 #submit:hover {
   /*background-color: #65D077;*/
   /*border: 1px solid #3DC807;*/
+  color: #FDFDFD;
+}
+
+#submit:disabled {
+  /*color: pink;*/
 }
 
 /* submit button pressed, different visual state */
 
 #submit:active {
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  /*box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);*/
 }
 
-/*
-input:required:invalid,
-textarea:required:invalid {
-  border: 1px solid red;
-}
-
-input:required:valid,
-textarea:required:valid {
+/*input:valid,
+textarea:valid {
   border: 1px solid green;
+}*/
+
+
+/* Hover.css */
+/* Sweep To Top */
+.hvr-sweep-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
-*/
+.hvr-sweep-to-top:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1B942F;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+      transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.94,.06,.32,.95);
+  transition-timing-function: cubic-bezier(0.94,.06,.32,.95);
+  border-radius: 4px;
+}
+.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+  color: white;
+}
+.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+      transform: scaleY(1);
+}
+
+
+
+a.nav-active {
+  background-color: white;
+  color:#ccc;
+}
 
 
 
@@ -430,19 +545,13 @@ textarea:required:valid {
 
 
 
+/* Devices above 850px wide */
 
-
-
-/* Devices above 750px wide */
-
-@media screen and (min-width: 750px) {
-<<<<<<< HEAD
-=======
+@media screen and (min-width: 850px) {
   .all {
     font-size: 18px;
   }
 
->>>>>>> Update index, style, initial commit script
   body {
     /* Controls color above/below page, seen only on overscroll */
     /*background-color: #FDFBF4;*/
@@ -536,15 +645,22 @@ textarea:required:valid {
     height: 125px;
   }
 
-  .skills,
-  .education {
+  figcaption {
+    display: block;
+  }
+
+  .skills {
     text-align: center;
-    /*-webkit-flex-direction: row;*/
+    -webkit-flex-direction: row;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+  }
+
+  .education {
+    text-align: center;
   }
 
   .skills,
@@ -571,15 +687,16 @@ textarea:required:valid {
     margin-bottom: 75px;
   }
 
+  .education {
+  }
+
   .SCU-logo-small {
     display: none;
   }
 
   .SCU-logo {
-    background-image: url("img/SCU-logo.png");
-    width: 175px;
-    height: 175px;
-    background-size: 100% 100%;
+    max-width: 100%;
+    height: 100px;
   }
 
   .one {
@@ -626,8 +743,6 @@ textarea:required:valid {
     }
   }
 }
-<<<<<<< HEAD
-=======
 
 @media screen and (min-width: 900px) {
   .work-images {
@@ -644,11 +759,37 @@ textarea:required:valid {
   }
 }
 
+@media screen and (min-width: 1050px) {
+  .SCU-logo {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+    width: auto;
+    max-width: 100%;
+    height: 125px;
+  }
+
+  .education {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .SCU-logo {
+    max-width: 100%;
+    height: 175px;
+  }
+}
+
 
 
 
 /* Possible breakpoint at 1100px, perhaps only decreasing size of SCU logo and images */
-/* If in mobile view, .bam rule should simply set font-weight to 700. Maybe load Moon Flower Bold font only if browser width is greater than 750px? How do I do that in CSS? Currently all fonts are loading
+/* If in mobile view, .bam rule should simply set font-weight to 700. Maybe load Moon Flower Bold font only if browser width is 
+   greater than 750px? How do I do that in CSS? Currently all fonts are loading
    in HTML. */
-
->>>>>>> Update index, style, initial commit script
